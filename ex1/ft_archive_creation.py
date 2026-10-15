@@ -13,8 +13,6 @@ if __name__ == "__main__":
             fl_name = sys.argv[1]
             print(f"Accessing file '{fl_name}'")
             file: typing.IO[str] = open(fl_name)
-            print()
-            print(type(file))
             content = file.read()
             print("---\n")
             print(content)
