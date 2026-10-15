@@ -43,3 +43,5 @@ if __name__ == "__main__":
             sys.stderr.write(f"[STDERR] Error opening file '{new_name}': "
                              f"[Errno 13] Permission denied: '{new_name}'"
                              "\nData not saved.\n")
+        except KeyboardInterrupt:
+            sys.stderr.write("\nKeyboard interrupted\n")

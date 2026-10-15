@@ -37,3 +37,5 @@ if __name__ == "__main__":
             print("Error opening file:", error)
         except PermissionError as error:
             print("Error opening file:", error)
+        except KeyboardInterrupt:
+            print("\nKeyboard interrupted")
